@@ -1,5 +1,8 @@
 #lang typed/racket
 
+(module+ test
+  (require typed/rackunit))
+
 (provide Digit
          digit?
          luhn-digits?
@@ -8,6 +11,14 @@
 (define-type Digit (U 0 1 2 3 4 5 6 7 8 9))
 
 (define-predicate digit? Digit)
+
+(module+ test
+  (check-true (digit? 0))
+  (check-true (digit? 5))
+  (check-true (digit? 9))
+  (check-false (digit? -1))
+  (check-false (digit? 10))
+  (check-false (digit? 'symbol)))
 
 (: luhn-digits? (-> (Listof Digit) Boolean))
 (define (luhn-digits? digits)
