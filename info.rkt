@@ -1,6 +1,6 @@
 #lang info
 (define collection "qklib")
-(define deps '("base"))
+(define deps '("base" "typed-racket-lib"))
 (define build-deps '("scribble-lib" "racket-doc" "rackunit-lib"))
 (define scribblings '(("scribblings/qklib.scrbl" ())))
 (define pkg-desc "Description Here")
