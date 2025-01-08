@@ -1,10 +1,7 @@
 #lang scribble/manual
-@require[@for-label[qklib
-                    racket/base]]
+@require[@for-label[racket/base]]
 
 @title{qklib}
 @author{masaya}
 
-@defmodule[qklib]
-
-Package Description Here
+My library.
