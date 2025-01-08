@@ -6,8 +6,6 @@
 
 My library.
 
-@section[qklib/luhn]
-
-@defmodule[toybox]
+@section{qklib/luhn}
 
 An implemention of Luhn algorithm.
