@@ -153,12 +153,12 @@
   (check-eqv? (luhn-sum (list->luhn '(1 4 7 6 3 7)))
               30))
 
-(: sum-of-digits (-> Integer Integer))
+(: sum-of-digits (-> Natural Natural))
 (define (sum-of-digits n)
-  ;; assert: 0 <= n <= 19
-  (if (< 9 n)
-      (- n 9)
-      n))
+  (define-values (q r) (quotient/remainder n 10))
+  (if (< q 10)
+      (+ q r)
+      (+ r (sum-of-digits q))))
 
 (module+ test
   (check-eqv? (sum-of-digits 8)
