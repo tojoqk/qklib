@@ -140,9 +140,10 @@
 (: zero-char-code Index)
 (define zero-char-code (char->integer #\0))
 
-(: luhn-sum (->* (Luhn) ((Listof (U 1 2))) Integer))
+(: luhn-sum (->* (Luhn) ((Listof (U 1 2))) Natural))
 (define (luhn-sum l [scale-list '(1 2)])
-  (for/sum ([d : Digit (luhn-rev-digits l)]
+  (for/sum : Natural
+           ([d : Digit (luhn-rev-digits l)]
             [scale : Natural (in-cycle scale-list)])
     (sum-of-digits (* d scale))))
 
