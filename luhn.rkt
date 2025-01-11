@@ -155,7 +155,7 @@
 
 (: sum-of-digits (-> Integer Integer))
 (define (sum-of-digits n)
-  ;; assert: 0 <= n <= 20
+  ;; assert: 0 <= n <= 19
   (if (< 9 n)
       (- n 9)
       n))
