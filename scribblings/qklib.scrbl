@@ -1,7 +1,7 @@
 #lang scribble/manual
 @require[@for-label[qklib/luhn typed/racket/base]]
 
-@title{QKlib}
+@title{QKLib}
 @author{Masaya Tojo}
 
 My persional library.

@@ -1,3 +1,3 @@
-qklib
+QKLib
 =====
-My library.
+My personal library.
