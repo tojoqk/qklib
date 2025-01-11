@@ -4,10 +4,6 @@ My persional library.
 
 ## 1. Luhn module
 
-```racket
- (require qklib/luhn) package: [qklib](https://pkgs.racket-lang.org/package/qklib)
-```
-
 The `qklib/luhn` module provide checking number and adding check digit
 functions.
 
