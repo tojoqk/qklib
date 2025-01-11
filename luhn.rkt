@@ -66,10 +66,7 @@
 
 (: list->luhn (-> (Listof Digit) Luhn))
 (define (list->luhn lst)
-  (luhn
-   (for/fold ([rev-digits : (Listof Digit) '()])
-             ([digit : Digit (in-list lst)])
-     (cons digit rev-digits))))
+  (luhn (reverse lst)))
 
 (module+ test
   (let ([random-digits
