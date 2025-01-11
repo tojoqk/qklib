@@ -14,10 +14,20 @@ The @racket[qklib/luhn] module provide checking number and adding check digit fu
 
 You can use it as follows:
 
-@examples[
-(luhn-valid? (list->luhn '(1 4 7 6 3 7))) ; => #t
-(luhn->list (luhn-add-check-digit (list->luhn '(1 4 7 6 3))) ; => '(1 4 7 6 3 7)
+@racketinput[
+(luhn-valid? (list->luhn '(1 4 7 6 3 7)))
 ]
+@racketresult[
+#t
+]
+
+@racketinput[
+(luhn->list (luhn-add-check-digit (list->luhn '(1 4 7 6 3))))
+]
+@racketresult[
+'(1 4 7 6 3 7)
+]
+
 
 @subsection{Digit Type}
 
