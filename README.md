@@ -1,6 +1,6 @@
 # Luhn
 
-This package module provide checking number and adding check digit
+This package provide checking number and adding check digit
 functions.
 
 You can use it as follows:
