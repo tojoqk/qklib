@@ -1,7 +1,6 @@
 # Luhn
 
-This package provide checking number and adding check digit
-functions.
+This package provides functions for validating numbers and adding check digits using the Luhn Algorithm.
 
 You can use it as follows:
 
