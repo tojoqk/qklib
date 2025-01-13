@@ -1,10 +1,6 @@
-# QKLib
+# Luhn
 
-My persional library.
-
-## 1. Luhn module
-
-The `qklib/luhn` module provide checking number and adding check digit
+The `luhn` module provide checking number and adding check digit
 functions.
 
 You can use it as follows:

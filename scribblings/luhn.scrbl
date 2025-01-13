@@ -1,16 +1,16 @@
 #lang scribble/manual
-@require[@for-label[qklib/luhn typed/racket/base]]
+@require[@for-label[luhn/main typed/racket/base]]
 
-@title{QKLib}
+@title{Luhn}
 @author{Masaya Tojo}
 
 My persional library.
 
 @section{Luhn module}
 
-@defmodule[qklib/luhn]
+@defmodule[luhn]
 
-The @racket[qklib/luhn] module provide checking number and adding check digit functions.
+The @racket[luhn] module provide checking number and adding check digit functions.
 
 You can use it as follows:
 

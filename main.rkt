@@ -17,6 +17,7 @@
 (define-predicate digit? Digit)
 
 (struct luhn ([rev-digits : (Listof Digit)])
+  #:transparent
   #:type-name Luhn)
 
 (module+ test
