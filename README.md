@@ -1,18 +1,25 @@
 # Luhn
 
-The `luhn` module provide checking number and adding check digit
+This package module provide checking number and adding check digit
 functions.
 
 You can use it as follows:
 
-`> (luhn-valid?` `(list->luhn` `'(1` `4` `7` `6` `3` `7)))`
+```
+> (luhn-valid?   (list->luhn   '(1   4   7   6   3   y7)))
+```
 
-`#t`
+```
+#t
+```
 
-`>
-(luhn->list` `(luhn-add-check-digit` `(list->luhn` `'(1` `4` `7` `6` `3))))`
+```
+> (luhn->list   (luhn-add-check-digit   (list->luhn   '(1   4   7   6   3))))
+```
 
-`'(1 4 7 6 3 7)`
+```
+'(1 4 7 6 3 7)
+```
 
 ### 1.1. Digit Type
 
