@@ -6,10 +6,10 @@ functions.
 You can use it as follows:
 
 ```
-> (luhn-valid?   (list->luhn   '(1   4   7   6   3   y7)))
+> (luhn-valid? (list->luhn '(1 4 7 6 3 7)))
 #t
 
-> (luhn->list   (luhn-add-check-digit   (list->luhn   '(1   4   7   6   3))))
+> (luhn->list (luhn-add-check-digit (list->luhn '(1 4 7 6 3))))
 '(1 4 7 6 3 7)
 ```
 
