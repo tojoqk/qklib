@@ -79,3 +79,7 @@ A procedure for converting from `String` to `Luhn`.
 ```
 
 A procedure for converting from `Luhn` to `String`.
+
+## License
+
+See LICENSE file.
