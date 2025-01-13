@@ -13,7 +13,9 @@ You can use it as follows:
 '(1 4 7 6 3 7)
 ```
 
-### 1.1. Digit Type
+## References
+
+### Digit Type
 
 ```racket
 Digit
@@ -28,7 +30,7 @@ Is the type of digit integers between `0` and `9`.
 
 A predicate for for the `Digit` type.
 
-### 1.2. Luhn type
+### Luhn type
 
 ```racket
 Luhn
