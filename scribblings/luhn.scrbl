@@ -4,13 +4,10 @@
 @title{Luhn}
 @author{Masaya Tojo}
 
-My persional library.
-
-@section{Luhn module}
-
 @defmodule[luhn]
 
-The @racket[luhn] module provide checking number and adding check digit functions.
+The @racket[luhn] module provides functions for validating numbers and
+adding check digits using the Luhn Algorithm.
 
 You can use it as follows:
 
@@ -29,13 +26,13 @@ You can use it as follows:
 ]
 
 
-@subsection{Digit Type}
+@section{Digit Type}
 
 @defidform[#:kind "type" Digit]{Is the type of digit integers between @racket[0] and @racket[9].}
 
 @defproc[(digit? [v Any]) Boolean]{A predicate for for the @racket[Digit] type.}
 
-@subsection{Luhn type}
+@section{Luhn type}
 
 @defidform[#:kind "type" Luhn]{Is the type of luhn structure.}
 
